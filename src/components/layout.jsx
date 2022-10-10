@@ -30,3 +30,17 @@ const Footer = () => {
         </footer>
     )
 }
+
+const Layout = () => {
+    return (
+        <>
+            <NavBar></NavBar>
+            <div className="main-container">
+                <Outlet />
+            </div>
+            <Footer></Footer>
+        </>
+    )
+}
+
+export default Layout;
