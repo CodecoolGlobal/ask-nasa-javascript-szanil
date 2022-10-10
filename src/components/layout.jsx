@@ -20,3 +20,13 @@ const NavBar = () => {
         </header>
     );
 }
+
+const Footer = () => {
+    return (
+        <footer className="border-top">
+            <div className="footer-container">
+                &copy; 2022 - Ask-Nasa szanil
+            </div>
+        </footer>
+    )
+}
