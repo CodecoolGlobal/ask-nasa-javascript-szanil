@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.response-container {
+    display: grid;
+    position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.response-image {
+    max-width: 85%;
+    max-height: 65vh;
+    margin: 5% 5% 5% 10% ;
+    justify-self: center;
+}
+
+.response-video {
+    width: 85%;
+    height: 100%;
+    margin: 5% 5% 5% 10%;
+    justify-self: center;
+}
+
+.date-picker {
+    align-items: center;
+    text-align:center;
+}
+
+/*Header*/
+.navbar {
+    padding: 10px;
+}
+
+/*Footer*/
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.footer-container {
+    padding-left: 20px;
+}
+
+/*Main*/
+.main-container {
+    margin: 30px;
+}
+
+/*DatePicker*/
+input {
+    color: white !important;
+}
+
+/*Index*/
+
+.picture-container {
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-areas:
+        "daily-menu daily-main";
+}
+
+.menu {
+    grid-area: daily-menu;
+}
+
+.main {
+    grid-area: daily-main;
+}
+
+.menu-text, .menu-picker {
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.menu-explanation {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.picture-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "picture-details picture";
+    position: relative;
+    max-height: 70vh;
+}
+
+.picture-details {
+    grid-area: picture-details;
+}
+
+.title-container, .picture-explanation-container {
+    text-align: center;
+}
+
+.explanation-title {
+    padding-top: 5%;
+}
+
+.picture-explanation {
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+}
+
+.picture-details-container, .picture-container {
+    margin-top: 40px;
+}
+
+/*Loading spinner*/
+.spinner-container {
+    justify-self: center;
 }
