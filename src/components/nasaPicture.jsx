@@ -8,6 +8,18 @@ const NasaPicture = () => {
     const [loading, setLoading] = useState(true);
     const { date } = useContext(DateContext);
 
+    useEffect(() => {
+        setLoading(true);
+        NasaAPI(date)
+            .then((data) => {
+                setPictureData(data);
+            })
+            .finally(() => {
+                setLoading(false);
+                console.log(pictureData)
+            });
+    }, [date]);
+
 }
 
 export default NasaPicture;
