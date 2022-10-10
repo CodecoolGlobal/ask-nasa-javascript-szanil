@@ -20,6 +20,37 @@ const NasaPicture = () => {
             });
     }, [date]);
 
+    return (
+        loading ?
+            <div className="spinner-container">
+                <MoonLoader color='#ffffff'  />
+            </div>
+            :
+            <>
+                <div className="title-container">
+                    <h1>{pictureData.title}</h1>
+                </div>
+                <div className="picture-data-container">
+                    <div className="response-container">
+                        {pictureData.media_type === "image" ? (
+                            <img className="response-image" src={pictureData.url} alt={pictureData.title}/>
+                        ) : (
+                            <iframe className="response-video"
+                                src={pictureData.url}
+                                title={pictureData.title}
+                                frameBorder="0"
+                                allowFullScreen
+                            />
+                        )}
+                    </div>
+                    <div className="picture-explanation-container">
+                        <h3 className="explanation-title">Explanation:</h3>
+                        <p className="picture-explanation">{pictureData.explanation}</p>
+                    </div>
+                    
+                </div>
+            </>
+    )
 }
 
 export default NasaPicture;
