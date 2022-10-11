@@ -21,7 +21,7 @@
 1. Get a free API Key at [https://api.nasa.gov/](https://api.nasa.gov/)
 2. Clone the repo
    ```
-   git clone https://github.com/CodecoolGlobal/ask-nasa-javascript-szanil
+   git clone https://github.com/CodecoolGlobal/ask-nasa-javascript-szanil.git
    ```
 
 3. Create a .env file and fill it with the api key parameter like below
