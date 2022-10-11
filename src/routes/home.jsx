@@ -2,10 +2,9 @@ import { useState } from 'react';
 import DateSelector from "../components/dateSelector";
 import NasaPicture from "../components/nasaPicture.jsx";
 import DateContext from '../context/dateContext';
-import format from 'date-fns/format';
 
 const Home = () => {
-    const [date, setDate] = useState(format(new Date(Date.now()), 'yyyy-MM-dd'))
+    const [date, setDate] = useState(new Date(Date.now()));
 
     return (
         <DateContext.Provider value={{ date, setDate }}>
