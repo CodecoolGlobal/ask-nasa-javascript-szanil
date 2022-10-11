@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 ?<h3 align="center">Ask Nasa</h3>
   <p align="center">
     A react application to view the astronomy pictures from the APOD API.
     <br />
     <a href="https://github.com/CodecoolGlobal/ask-nasa-javascript-szanil"><strong>Explore the docs �</strong></a>
+=======
+﻿<h3 align="center">Ask Nasa</h3>
+  <p align="center">
+    A react application to view the astronomy pictures from the APOD API.
+    <br />
+    <a href="https://github.com/CodecoolGlobal/ask-nasa-javascript-szanil"><strong>Explore the docs »</strong></a>
+>>>>>>> b0c660de6557c8ed4802541cb9f029094f861bfb
   </p>
 
 ## Built With
@@ -30,4 +38,8 @@
    ```
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+<<<<<<< HEAD
 [React-url]: https://reactjs.org/
+=======
+[React-url]: https://reactjs.org/
+>>>>>>> b0c660de6557c8ed4802541cb9f029094f861bfb
