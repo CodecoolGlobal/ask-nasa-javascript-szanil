@@ -16,13 +16,13 @@ const NasaPicture = () => {
             })
             .finally(() => {
                 setLoading(false);
-                console.log(pictureData)
+                console.log(pictureData);
             });
     }, [date]);
 
     return (
         loading ?
-            <div className="spinner-container">
+            <div className="spinner">
                 <MoonLoader color='#ffffff'  />
             </div>
             :
@@ -30,7 +30,7 @@ const NasaPicture = () => {
                 <div className="title-container">
                     <h1>{pictureData.title}</h1>
                 </div>
-                <div className="picture-data-container">
+                <div className="data-container">
                     <div className="response-container">
                         {pictureData.media_type === "image" ? (
                             <img className="response-image" src={pictureData.url} alt={pictureData.title}/>
@@ -43,7 +43,7 @@ const NasaPicture = () => {
                             />
                         )}
                     </div>
-                    <div className="picture-explanation-container">
+                    <div className="explanation-container">
                         <h3 className="explanation-title">Explanation:</h3>
                         <p className="picture-explanation">{pictureData.explanation}</p>
                     </div>

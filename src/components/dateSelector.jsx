@@ -5,6 +5,7 @@ import format from 'date-fns/format';
 
 const DateSelector = () => {
     const [dateValue, setDateValue] = useState(new Date(Date.now()));
+    const { date } = useContext(DateContext);
     const { setDate } = useContext(DateContext);
     return (
         <div>
@@ -13,12 +14,9 @@ const DateSelector = () => {
                 clearIcon={null}
                 minDate={new Date("2000-01-01")}
                 maxDate={new Date(Date.now())}
-                onChange={(value) => {
-                    if (!value) {
-                        value = new Date(Date.now());
-                    }
-                    setDateValue(value);
-                    setDate(format(value, 'yyyy-MM-dd'));
+                onChange={(newDate) => {
+                    setDateValue(newDate);
+                    setDate(format(newDate, 'yyyy-MM-dd'));
                 }}
                 value={dateValue} />
         </div>

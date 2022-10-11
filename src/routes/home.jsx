@@ -9,14 +9,14 @@ const Home = () => {
 
     return (
         <DateContext.Provider value={{ date, setDate }}>
-            <div className="picture-container">
+            <div className="image-container">
                 <div className="menu">
                     <p className="menu-text"><h3>Learn about the universe!</h3><br />
                         <div className="menu-explanation">
                             Every day we provide a fresh image or video about the cosmos, with a brief explanation from a professional astronomer.
                         </div>
                     </p>
-                    <div className="date-picker">
+                    <div className="date-selector">
                         <DateSelector />
                     </div>
                 </div>

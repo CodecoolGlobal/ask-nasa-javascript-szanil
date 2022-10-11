@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 const DateContext = createContext({
     date: new Date(Date.now()),
-    setDate: () => { }
+    setDate: () => {}
 });
 
 export default DateContext
